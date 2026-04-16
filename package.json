@@ -1,13 +1,24 @@
 {
   "name": "ailib-router",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Multi-provider AI chat library with auto/manual routing and fallback",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "files": [
     "dist"
   ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pigos4/Ai-Lib.git"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "vitest run",
