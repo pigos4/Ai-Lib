@@ -1,14 +1,15 @@
 {
   "name": "ailib-router",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Multi-provider AI chat library with auto/manual routing and fallback",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     }
   },
   "files": [
